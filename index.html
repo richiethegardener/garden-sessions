@@ -8,7 +8,7 @@
 
 <body>
     <!--start of my page.-->
-   
+
     <header>
 
         <h1>Welcome to Garden Sessions!</h1>
@@ -32,8 +32,8 @@
         <p>Join us for workshops, plant swaps, and community gardening events. <em>Our goal is to foster a love for
                 gardening and create a supportive network for all members.</em></p>
 
+        <h2>What to bring</h2>
         <ul>
-            <h2>What to bring</h2>
             <li>A blanket</li>
             <li>A friend</li>
             <li>Your own songs</li>
@@ -51,7 +51,7 @@
                 </tr>
             </thead>
             <tbody>
-                <tr></tr>
+                <tr>
                 <td>11 Nov 7:00 pm</td>
                 <td>The Green Thumbs</td>
                 <td> <button popovertarget="popover1">See More</button>
@@ -59,14 +59,14 @@
                 </tr>
 
                 <tr>
-                    <td>11 Nov8:30 pm</td>
+                    <td>12 Nov 8:30 pm</td>
                     <td>Blooming Beats</td>
                     <td> <button popovertarget="popover2">See More</button>
                     </td>
                 </tr>
 
                 <tr>
-                    <td>11 Nov10:00 pm</td>
+                    <td>13 Nov 10:00 pm</td>
                     <td>Petal Pushers</td>
                     <td> <button popovertarget="popover3">See More</button>
                     </td>
@@ -87,83 +87,86 @@
     </section>
 
     <section id="gallery">
-        <h2>Gallery</h2>
-        <p>Check out some of the beautiful moments captured during our gardening sessions and events.</p>
-        <div class="gallery">
-            <button popovertarget="mughome">
-                <img src="fotos/mughome.png" alt="Garden Session 1" width="300" height="300">
-            </button>
-            <div id="mughome" popover>
-                <img src="fotos/mughome.png" alt="Garden Session 1" width="600" height="600">
-                <button popovertarget="mugwildflower">Next →</button>
-            </div>
-            <div id="mugwildflower" popover>
-                <img src="fotos/mugwildflower.png" alt="Garden Session 1" width="600" height="600">
-                <button popovertarget="mughome" popovertargetaction="hide">back</button>
-            </div>
-        </div>
-        <div class="gallery">
-            <button popovertarget="mugwildflower">
-                <img src="fotos/mugwildflower.png" alt="Garden Session 1" width="300" height="300">
-            </button>
-            <div id="mugwildflower" popover>
-                <img src="fotos/mugwildflower.png" alt="Garden Session 1" width="600" height="600">
-            </div>
-        </div>
+    <h2>Gallery</h2>
+    <p>Check out some of the beautiful moments captured during our gardening sessions and events.</p>
 
-        <div class="gallery">
-            <button popovertarget="mugmake">
-                <img src="fotos/mugmake.png" alt="Garden Session 1" width="300" height="300">
-            </button>
-            <div id="mugmake" popover>
-                <img src="fotos/mugmake.png" alt="Garden Session 1" width="600" height="600">
-            </div>
+    <div class="gallery">
+        <button popovertarget="image1">
+            <img src="https://www.nme.com/wp-content/uploads/2022/03/gang_of_youths_brixton_2.jpg" alt="Gang of youths Live" width="300" height="300">
+        </button>
+        <div id="image1" popover>
+            <img src="https://www.nme.com/wp-content/uploads/2022/03/gang_of_youths_brixton_2.jpg" alt="Gang of youths Live" width="600" height="600">
+            <button popovertarget="image2">Next →</button>
         </div>
-    </section>
-    </section>
+    </div>
 
+    <div class="gallery">
+        <button popovertarget="image2">
+            <img src="https://music-b26f.kxcdn.com/wp-content/uploads/2014/12/the-head-and-the-heart_oe_20141122_020.jpg" alt="The Head and the Heart Live" width="300" height="300">
+        </button>
+        <div id="image2" popover>
+            <img src="https://music-b26f.kxcdn.com/wp-content/uploads/2014/12/the-head-and-the-heart_oe_20141122_020.jpg" alt="The Head and the Heart Live" width="600" height="600">
+            <button popovertarget="image2" popovertargetaction="hide">← Back</button>
+        </div>
+    </div>
 
+    <div class="gallery">
+        <button popovertarget="image3">
+            <img src="https://www.liveinlimbo.com/wp-content/uploads/2014/10/Angus-Julia-Stone-OperaHouse-102114-3-of-16.jpg" alt="Angus and Julia Stone live" width="300" height="300">
+        </button>
+        <div id="image3" popover>
+            <img src="https://www.liveinlimbo.com/wp-content/uploads/2014/10/Angus-Julia-Stone-OperaHouse-102114-3-of-16.jpg" alt="Angus and Julia Stone live" width="600" height="600">
+        </div>
+    </div>
+</section>
 
     <section id="signup">
         <h2>Sign Up</h2>
-        <p>Check out some of the beautiful moments captured during our gardening sessions and events.</p>
-       <form action="https://app.kit.com/forms/10161160/subscriptions" method="post" target="_blank">
+        <p>Want to play at Garden Sessions? Pick a night and tell us your song.</p>
+
+        <form action="#" method="post">
+            <div>
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" placeholder="Enter your name" required></imput>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="Enter your email" required></imput>
-
-  <div class="dropdown" id="nights-dropdown">
-    <label for="nights">Select a night:</label>          
-<dropdown button id="nights-dropdown"></button>
-    <div class="dropdown-content" id="nights-dropdown">  
-                
-            <select id="nights-dropdown" name="nights-dropdown">
-                <option value="11nov">11 Nov</option>
-                <option value="12nov">12 Nov</option>
-                <option value="13nov">13 Nov</option>
-            </select>
+            <input type="text" id="name" name="name" placeholder="Enter your name">
             </div>
-            </dropdown>
+
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
             </div>
-            
-            
-            <label for="interests">Which song will you play:</label>
-            <textarea id="interests" name="interests" placeholder="Enter your song"></textarea>
 
-            <button type="submit">Sign Up</button>
-            </form> 
-            
-            
+            <div>
+                <label for="night">Select a night:</label>
+                <select id="night" name="night" required>
+                    <option value="" disabled selected>Choose a night</option>
+                    <option value="11nov">11 Nov</option>
+                    <option value="12nov">12 Nov</option>
+                    <option value="13nov">13 Nov</option>
+                </select>
+            </div>
 
-            <footer id="contact">
-                    <p>&copy; 2026 Garden Sessions. All rights reserved.</p>
-                   <p><a href="mailto:gardenssessions@hotmail.com">Send email</a></p>
-        <p>Follow on <a href="https://www.instagram.com/gardensessions/">Instagram</a>
-        </p> 
+            <div>
+                <label for="song">Which song will you play?</label>
+                <textarea id="song" name="song" rows="4" cols="40" placeholder="Enter your song"></textarea>
+            </div>
+
+            <div>
+                <button type="submit">Sign Up</button>
+            </div>
+        </form>
+    </section>
+
+
+
+    <footer id="contact">
+        <p>&copy; 2026 Garden Sessions. All rights reserved.</p>
+        <p><a href="mailto:gardenssessions@hotmail.com">Send email</a></p>
+        <p>Follow on <a href="https://www.instagram.com/gardensessions/" target="_blank">Instagram</a></p>
+        </p>
     </footer>
 </body>
-</html> 
+
+</html>
 
 
 
